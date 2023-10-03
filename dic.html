@@ -1,0 +1,46 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width,inital-scale=1.0">
+<style>
+body {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:100vh;
+	max-width:800px;
+	margin: 0 auto;
+	background:black;
+}
+.line{
+	position:relative;
+	stroke-dasharray:600;
+	stroke-dashoffset:600;
+	font-size:10em;
+	fill:black;
+	animation:sz 3s linear forwards;
+	text-shadow:2px 2px 10px white;
+	}
+@keyframes sz{
+	to{stroke-dashoffset:0;}
+}
+.ab{
+	width:60%;
+	height:60%;
+	position:fix;
+	border-radius:50%;
+	animation:bod 3s 2s linear forwards;
+}
+@keyframes bod{
+	0%{box-shadow:7px 7px 7px white;}
+	25%{box-shadow:-2px -4px 7px white;}
+	50%{box-shadow:6px -3px 7px white;}
+	75%{box-shadow:6px 0px 7px white;}
+	100%{box-shadow:2px 2px 7px white;}
+}
+</style>
+</head>
+<body>
+<div class="ab">
+<svg height="100%" stroke="white" stroke-width="2" class="line" width="100%"><text x="50%" dominant-baseline="middle" text-anchor="middle" y="50%">DIC</text></svg></div>
+</body>
+</html>
